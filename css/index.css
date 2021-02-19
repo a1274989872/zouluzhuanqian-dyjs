@@ -1,0 +1,175 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background-color: #f7f8fa;
+    /* background-color: #000; */
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.page1 {
+    width: 100%;
+    height: 100%;
+}
+
+#wrap {
+    width: 100%;
+    height: 17.786667rem;
+    position: absolute;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.di {
+    width: 100%;
+    height: 1.746667rem;
+    position: absolute;
+    left: 0;
+    bottom: 0.4rem;
+    background-image: url(../images/bg2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: .7;
+}
+
+.logo {
+    position: absolute;
+    top: 0.546667rem;
+    left: 0.746667rem;
+    width: 1.066667rem;
+    height: 1.066667rem;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* .content {
+    position: absolute;
+    top: calc(50% - 8.893333rem);
+    left: calc(50% - 5rem);
+    width: 10rem;
+    height: 17.786667rem;
+    background-color: rosybrown;
+} */
+
+.hb1 {
+    position: absolute;
+    top: 3.266667rem;
+    left: calc(50% - 4.253333rem);
+    width: 8.506667rem;
+    height: 11.013333rem;
+}
+
+.circle {
+    position: absolute;
+    top: 11.626667rem;
+    left: calc(50% - 1.44rem);
+    width: 2.88rem;
+    height: 2.88rem;
+    animation: beat .5s alternate linear infinite;
+}
+
+.open {
+    position: absolute;
+    top: 11.5rem;
+    left: calc(50% - 1.44rem);
+    translate: .5s;
+    animation: openCard .5s linear forwards;
+}
+
+@keyframes openCard {
+    0% {
+        transform: scale(1.1) rotateY(0);
+    }
+    50% {
+        transform: scale(1.1) rotateY(180deg);
+    }
+    100% {
+        position: absolute;
+        top: 11.626667rem;
+        left: calc(50% - 1.44rem);
+        transform: scale(1);
+    }
+}
+
+.open2 {
+    position: absolute;
+    top: 3.266667rem;
+    left: calc(50% - 4.253333rem);
+    translate: .5s;
+    animation: openCard2 .5s linear forwards;
+}
+
+@keyframes openCard2 {
+    0% {
+        transform: scale(1.1) rotateY(0);
+    }
+    50% {
+        transform: scale(1.1) rotateY(90deg);
+    }
+    100% {
+        position: absolute;
+        top: 3.266667rem;
+        left: calc(50% - 4.253333rem);
+        transform: scale(1);
+    }
+}
+
+.page2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hb2 {
+    position: absolute;
+    top: 3.266667rem;
+    left: calc(50% - 4.253333rem);
+    width: 8.506667rem;
+    height: 11.013333rem;
+}
+
+.btn {
+    position: absolute;
+    top: 12.373333rem;
+    left: calc(50% - 2.666667rem);
+    width: 5.333333rem;
+    height: 1.213333rem;
+    animation: beat .5s alternate linear infinite;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
